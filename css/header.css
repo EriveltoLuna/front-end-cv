@@ -33,7 +33,7 @@ header {
 
 .header-intro-profile {
   max-width: 30%;
-  
+  padding-right: 140px;
 }
 
 .header-intro-text {
@@ -57,6 +57,7 @@ header {
 
 .header-intro-text h1{
   font-size: 4rem;
+  font-weight: bold;
   margin-bottom: 30px;
   color: #141414;
 }
