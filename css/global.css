@@ -1,8 +1,7 @@
-body{
+body {
   max-width: 1200px;
   margin: auto;
 }
-
 
 h1,
 h2,
@@ -10,7 +9,8 @@ h3,
 p,
 a,
 ul,
-li {
+li,
+span {
   margin: 0px;
   padding: 0px;
   font-family: "fira sans";

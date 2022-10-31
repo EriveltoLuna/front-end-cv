@@ -1,0 +1,124 @@
+.main-edu {
+  padding-top: 110px;
+  display: flex;
+  gap: 150px;
+  background-color: #141414;
+  padding-bottom: 120px;
+  
+}
+
+.main-edu-title {
+  margin-left: 10px;
+}
+
+.main-edu-title h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-edu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.main-edu-info-1 {
+  margin-bottom: 40px;
+}
+
+.main-edu-info-1 h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: #767676;
+}
+
+.main-edu-info-1 strong {
+  color: white;
+}
+
+.main-edu-info-2-parent-container {
+  display: flex;
+  gap: 30px;
+}
+
+#bachelor,
+#technical,
+#masters {
+  display: flex;
+  background-color: #080808;
+  border-radius: 5px;
+  padding: 20px;
+  width: 110px;
+  height: 120px;
+}
+
+.main-edu-info-2-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-edu-info-2-description h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: white;
+}
+
+.main-edu-info-2-description p {
+  text-align: left;
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+#school {
+  margin-top: auto;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+}
+
+.main-edu-info-3 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-edu-info-3 p {
+  color: #8f8f8f;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.main-edu-info-3 h2 {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-edu-info-3 span {
+  color: #8f8f8f;
+}
+
+
+.main-edu-info-4 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-edu-info-4 p {
+  color: #8f8f8f;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.main-edu-info-4 h2 {
+  color: #ffffff;
+}
+
+.main-edu-info-4 span {
+  color: #8f8f8f;
+}
