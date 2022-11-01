@@ -1,5 +1,5 @@
 header {
-  margin: 40px 20px;
+  margin: 40px 140px 120px;
 }
 .header-nav {
   display: flex;
@@ -26,7 +26,6 @@ header {
 
 .header-intro {
   display: flex;
-  gap: 50px;
   max-width: 100%;
   align-items: center;
 }

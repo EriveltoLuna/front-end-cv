@@ -1,14 +1,10 @@
 .main-edu {
-  padding-top: 110px;
+  padding-top: 60px;
   display: flex;
-  gap: 150px;
   background-color: #141414;
   padding-bottom: 120px;
-  
-}
-
-.main-edu-title {
-  margin-left: 10px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .main-edu-title h1 {
@@ -16,17 +12,18 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
+  padding-right: 130px;
 }
 
 .main-edu-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 500px;
 }
 
 .main-edu-info-1 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  max-width: 80%;
 }
 
 .main-edu-info-1 h2 {
@@ -41,7 +38,22 @@
 
 .main-edu-info-2-parent-container {
   display: flex;
-  gap: 30px;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.main-edu-info-2-container h2 {
+  position: relative;
+}
+
+.main-edu-info-2-description h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(180deg, #b6f829, #67dd0a);
+  width: 4px;
+  height: 100%;
+  left: -24px;
 }
 
 #bachelor,
@@ -51,8 +63,8 @@
   background-color: #080808;
   border-radius: 5px;
   padding: 20px;
-  width: 110px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
 }
 
 .main-edu-info-2-description {
@@ -83,6 +95,18 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+}
+
+.main-edu-info-3 p::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(../img/cursos.svg);
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  top: -3px;
 }
 
 .main-edu-info-3 p {
@@ -101,12 +125,23 @@
   color: #8f8f8f;
 }
 
-
 .main-edu-info-4 {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+}
+
+.main-edu-info-4 p::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(../img/idiomas.svg);
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  top: -3px;
 }
 
 .main-edu-info-4 p {
