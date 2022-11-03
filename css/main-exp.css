@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   margin-left: 140px;
   margin-right: 140px;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .main-exp-title h1 {
@@ -11,18 +11,61 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #e0e0e0;
-  padding-right: 140px;
+}
+
+@media (max-width: 1300px) {
+  .main-exp-title h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main-exp-title h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .main-exp-title h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width:900px){
+  .main-exp-title h1 {
+    display: none;
+  }
 }
 
 .main-exp-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 60%;
+}
+
+@media (max-width:900px){
+  .main-exp-info{
+    margin: auto;
+    max-width: 100%;
+  }
 }
 
 .main-exp-info-1 {
   margin-bottom: 50px;
   max-width: 80%;
+}
+
+@media (max-width:1000px){
+  .main-exp-info-1{
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width:900px){
+  .main-exp-info-1{
+    max-width: 100%;
+  }
 }
 
 .main-exp-info-1 h2 {
@@ -31,11 +74,18 @@
   color: #525252;
 }
 
-.main-exp-info-2-container h2{
+@media (max-width: 900px){
+  .main-exp-info-1 h2{
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+}
+
+.main-exp-info-2-container h2 {
   position: relative;
 }
 
-.main-exp-info-2-description h2::before{
+.main-exp-info-2-description h2::before {
   content: "";
   display: block;
   position: absolute;
@@ -45,7 +95,7 @@
   left: -24px;
 }
 
-#bikcraft-title::after{
+#bikcraft-title::after {
   content: "2045";
   font-size: 0.875rem;
   color: #525252;
@@ -55,7 +105,7 @@
   top: 5px;
 }
 
-#surfbot-title::after{
+#surfbot-title::after {
   content: "2044 - 2045";
   font-size: 0.875rem;
   color: #525252;
@@ -65,7 +115,7 @@
   top: 5px;
 }
 
-#brafe-title::after{
+#brafe-title::after {
   content: "2044";
   font-size: 0.875rem;
   color: #525252;
@@ -75,7 +125,9 @@
   top: 5px;
 }
 
-#bikcraft, #surfbot, #brafe {
+#bikcraft,
+#surfbot,
+#brafe {
   display: flex;
   background-color: #f5f5f5;
   border-radius: 5px;

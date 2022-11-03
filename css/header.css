@@ -8,9 +8,11 @@ header {
   margin-bottom: 80px;
 }
 
-#header-nav-home {
-  display: inline-block;
-  width: fit-content;
+@media (max-width: 900px) {
+  .header-nav {
+    flex-direction: column;
+    gap: 80px;
+  }
 }
 
 .header-nav-menu {
@@ -18,7 +20,7 @@ header {
   gap: 15px;
 }
 
-.header-nav-menu a{
+.header-nav-menu a {
   color: #141414;
   text-transform: capitalize;
   padding: 10px 20px;
@@ -26,18 +28,31 @@ header {
 
 .header-intro {
   display: flex;
-  max-width: 100%;
   align-items: center;
+  gap: 10%;
 }
 
-.header-intro-profile {
+@media (max-width: 900px) {
+  .header-intro{
+    justify-content: center;
+    gap: 0px;
+  }
+}
+
+#header-intro-profile {
   max-width: 30%;
-  padding-right: 140px;
+}
+
+@media (max-width: 900px) {
+  #header-intro-profile {
+    display: none;
+  }
 }
 
 .header-intro-text {
   position: relative;
   z-index: 1;
+  /* margin: auto; */
 }
 
 .header-intro-text::before {
@@ -46,7 +61,7 @@ header {
   width: 130px;
   height: 100px;
   top: -15px;
-  left:-30px;
+  left: -30px;
   background-image: url("../img/detalhe.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -54,15 +69,21 @@ header {
   z-index: -1;
 }
 
-.header-intro-text h1{
+.header-intro-text h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 30px;
   color: #141414;
 }
 
-.header-intro-text h2{
-  font-size: 1.5rem;
+.header-intro-text h2 {
+  font-size: 1.75rem;
   font-weight: normal;
   color: #525252;
+}
+
+@media (max-width: 1085px) {
+  .header-intro-text h1 {
+    font-size: 3rem;
+  }
 }

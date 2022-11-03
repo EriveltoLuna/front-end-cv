@@ -38,7 +38,6 @@
 
 .main-edu-info-2-parent-container {
   display: flex;
-  gap: 50px;
   justify-content: space-between;
 }
 
@@ -63,8 +62,8 @@
   background-color: #080808;
   border-radius: 5px;
   padding: 20px;
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
 }
 
 .main-edu-info-2-description {
