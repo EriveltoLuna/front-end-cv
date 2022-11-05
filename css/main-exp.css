@@ -1,9 +1,14 @@
 .main-exp {
   display: flex;
   padding-bottom: 60px;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0px 140px;
   justify-content: space-between;
+}
+
+@media (max-width: 950px){
+  .main-exp{
+    margin: 0px 110px;
+  }
 }
 
 .main-exp-title h1 {
@@ -31,7 +36,7 @@
   }
 }
 
-@media (max-width:900px){
+@media (max-width:950px){
   .main-exp-title h1 {
     display: none;
   }
@@ -44,7 +49,7 @@
   max-width: 60%;
 }
 
-@media (max-width:900px){
+@media (max-width:950px){
   .main-exp-info{
     margin: auto;
     max-width: 100%;
@@ -62,7 +67,7 @@
   }
 }
 
-@media (max-width:900px){
+@media (max-width:950px){
   .main-exp-info-1{
     max-width: 100%;
   }
@@ -74,7 +79,7 @@
   color: #525252;
 }
 
-@media (max-width: 900px){
+@media (max-width: 950px){
   .main-exp-info-1 h2{
     font-size: 1.25rem;
     text-align: justify;

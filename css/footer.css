@@ -5,7 +5,7 @@
 .footer-intro {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -13,8 +13,14 @@
 .footer-intro h2 {
   color: #cccccc;
   font-size: 1.5rem;
-  max-width: 350px;
+  max-width: 30%;
   position: relative;
+}
+
+@media (max-width: 950px) {
+  .footer-intro {
+    justify-content: space-evenly;
+  }
 }
 
 .footer-intro h2::before {
@@ -22,11 +28,17 @@
   display: block;
   width: 130px;
   height: 100px;
-  top: -188px ;
+  top: -188px;
   background-image: url("../img/detalhe.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
+}
+
+@media (max-width: 950px) {
+  .footer-intro h2::before {
+    left: 100%;
+  }
 }
 
 .footer-intro h1 {
@@ -34,15 +46,11 @@
   color: #ffffff;
 }
 
-.footer-intro-con {
-  max-width: 350px;
-}
-
-.footer-intro-con h1{
+.footer-intro-con h1 {
   font-weight: bold;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   color: #8f8f8f;
   font-size: 1.125rem;
   text-align: center;

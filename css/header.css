@@ -8,7 +8,7 @@ header {
   margin-bottom: 80px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header-nav {
     flex-direction: column;
     gap: 80px;
@@ -18,6 +18,13 @@ header {
 .header-nav-menu {
   display: flex;
   gap: 15px;
+}
+
+@media (max-width: 950px){
+  .header-nav-menu {
+    justify-content: center;
+    gap: 20%;
+  }
 }
 
 .header-nav-menu a {
@@ -32,7 +39,7 @@ header {
   gap: 10%;
 }
 
-@media (max-width: 900px) {
+@media (max-width:950px) {
   .header-intro{
     justify-content: center;
     gap: 0px;
@@ -43,7 +50,7 @@ header {
   max-width: 30%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   #header-intro-profile {
     display: none;
   }
