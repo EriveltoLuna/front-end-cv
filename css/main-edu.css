@@ -7,7 +7,8 @@
 
 @media (max-width: 950px) {
   .main-edu {
-    padding: 60px 110px 120px 110px;
+    display: block;
+    padding: 60px 10% 100px;
   }
 }
 
@@ -15,7 +16,7 @@
   font-size: 7rem;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000000;
+  color: #323232;
 }
 
 @media (max-width: 1300px) {
@@ -33,11 +34,19 @@
 @media (max-width: 950px) {
   .main-edu-title h1 {
     font-size: 4rem;
+    padding-bottom: 20px;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 500px) {
   .main-edu-title h1 {
+    font-size: 2.75rem;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:950px){
+  .main-edu-title h1 br {
     display: none;
   }
 }
@@ -57,32 +66,7 @@
 }
 
 .main-edu-info-1 {
-  margin-bottom: 50px;
-  max-width: 80%;
-}
-
-@media (max-width: 1000px) {
-  .main-edu-info-1 {
-    margin-bottom: 25px;
-  }
-}
-
-@media (max-width: 950px) {
-  .main-edu-info-1 {
-    max-width: 100%;
-  }
-}
-
-.main-edu-info-1 {
-  margin-bottom: 50px;
-  max-width: 80%;
-}
-
-@media (max-width: 1200px) {
-  .main-edu-info-1 {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
+  margin-bottom: 25px;
 }
 
 .main-edu-info-1 h2 {
@@ -125,12 +109,14 @@
 .main-edu-info-2-parent-container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 5%;
 }
 
-@media (max-width: 950px) {
-  .main-edu-info-2-parent-container {
-    justify-content: space-evenly;
+@media (max-width: 500px){
+  .main-edu-info-2-parent-container{
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
   }
 }
 
@@ -183,7 +169,7 @@
   background-image: url(../img/cursos.svg);
   width: 24px;
   height: 24px;
-  left: -36px;
+  left: -30px;
   top: -3px;
 }
 
@@ -216,7 +202,7 @@
   background-image: url(../img/idiomas.svg);
   width: 24px;
   height: 24px;
-  left: -36px;
+  left: -30px;
   top: -3px;
 }
 

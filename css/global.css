@@ -31,3 +31,7 @@ ul,
 li {
   list-style: none;
 }
+
+main {
+  margin: 0px;
+}

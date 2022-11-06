@@ -1,6 +1,12 @@
 header {
   margin: 40px 140px 120px;
 }
+
+@media (max-width:950px){
+  header{
+    margin: 30px auto;
+  }
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -10,20 +16,30 @@ header {
 
 @media (max-width: 950px) {
   .header-nav {
-    flex-direction: column;
-    gap: 80px;
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+.header-nav img{
+  display: block;
+}
+
+@media (max-width: 950px) {
+  .header-nav img{
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 
 .header-nav-menu {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 @media (max-width: 950px){
   .header-nav-menu {
     justify-content: center;
-    gap: 20%;
   }
 }
 
@@ -37,12 +53,12 @@ header {
   display: flex;
   align-items: center;
   gap: 10%;
+  margin: 0px 10%;
 }
 
 @media (max-width:950px) {
   .header-intro{
     justify-content: center;
-    gap: 0px;
   }
 }
 
@@ -88,18 +104,6 @@ header {
   }
 }
 
-@media (max-width: 650px) {
-  .header-intro-text h1 {
-    font-size: 2.25rem;
-  }
-}
-
-@media (max-width: 570px) {
-  .header-intro-text h1 {
-    font-size: 1.7rem;
-  }
-}
-
 .header-intro-text h2 {
   font-size: 1.75rem;
   font-weight: normal;
@@ -110,17 +114,5 @@ header {
   .header-intro-text h2 {
     font-size: 1.5rem;
     text-align: center;
-  }
-}
-
-@media (max-width: 650px) {
-  .header-intro-text h2 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 570px) {
-  .header-intro-text h2 {
-    font-size: 1.1rem;
   }
 }
