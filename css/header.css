@@ -59,7 +59,6 @@ header {
 .header-intro-text {
   position: relative;
   z-index: 1;
-  /* margin: auto; */
 }
 
 .header-intro-text::before {
@@ -83,14 +82,45 @@ header {
   color: #141414;
 }
 
+@media (max-width: 1085px) {
+  .header-intro-text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-intro-text h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .header-intro-text h1 {
+    font-size: 1.7rem;
+  }
+}
+
 .header-intro-text h2 {
   font-size: 1.75rem;
   font-weight: normal;
   color: #525252;
 }
 
-@media (max-width: 1085px) {
-  .header-intro-text h1 {
-    font-size: 3rem;
+@media (max-width: 950px) {
+  .header-intro-text h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-intro-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .header-intro-text h2 {
+    font-size: 1.1rem;
   }
 }
